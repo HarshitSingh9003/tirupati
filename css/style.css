@@ -1,0 +1,357 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    background-color: #1e272e; /* Dark Charcoal */
+    color: #dcdde1; /* Light Gray */
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: linear-gradient(90deg, #f0932b, #e58e26);
+    color: rgb(7, 0, 0);
+    font-size: x-large;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header img {
+    width: 150px;
+    height: auto;
+}
+
+.header .logo span {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navigation Bar */
+.nav {
+    background-color: #303952; /* Dark Navy */
+    padding: 15px 0;
+    text-align: center;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #dcdde1;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav a:hover {
+    color: #f0932b;
+    transform: scale(1.1);
+}
+
+/* Hero Section (Slider) */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #303952;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #f0932b;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slider-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #f0932b, #e58e26);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #e58e26, #f0932b);
+    transform: scale(1.05);
+}
+
+/* Room Images Section */
+.roomimages {
+    padding: 50px 8%;
+    background-color: #2c3a47;
+    text-align: center;
+}
+
+.roomimages h1 {
+    font-size: 2.5rem;
+    color: #f0932b;
+    margin-bottom: 25px;
+}
+
+.innerimg {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 1.5%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.innerimg img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.innerimg img:hover {
+    transform: scale(1.05);
+}
+
+.innerimg p {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #f0932b;
+}
+
+/* About Us Section */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 8%;
+    background-color: #34495e;
+    color: #dcdde1;
+}
+
+.about img {
+    width: 45%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about .about-p {
+    width: 50%;
+    text-align: justify;
+}
+
+.about .about-p h1 {
+    font-size: 2.2rem;
+    color: #f0932b;
+    margin-bottom: 15px;
+}
+
+.about .about-p p {
+    font-size: 1.1rem;
+}
+
+/* Footer Section */
+#footer {
+    background: #303952;
+    color: #dcdde1;
+    padding: 25px 8%;
+    text-align: center;
+}
+
+.footer-info p {
+    margin: 10px 0;
+}
+
+.social-links a {
+    color: #f0932b;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #e58e26;
+    transform: scale(1.2);
+}
+
+.copyright,
+.credits {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.credits a {
+    color: #f0932b;
+    text-decoration: none;
+}
+
+.credits a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Breakpoints */
+
+/* Extra Small Devices (Portrait Phones) */
+@media (max-width: 400px) {
+    .header img {
+        width: 100px;
+    }
+    .slider {
+        height: 300px;
+    }
+    .slider-text {
+        font-size: 1rem;
+        padding: 15px;
+    }
+    .slider-text h1 {
+        font-size: 1.4rem;
+    }
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    .roomimages h1,
+    .about .about-p h1 {
+        font-size: 1.6rem;
+    }
+    .innerimg img {
+        height: 180px;
+    }
+}
+
+/* Small Devices (Larger Phones: 400px to 576px) */
+@media (min-width: 400px) and (max-width: 576px) {
+    .header img {
+        width: 120px;
+    }
+    .slider {
+        height: 350px;
+    }
+    .slider-text h1 {
+        font-size: 1.6rem;
+    }
+    .btn {
+        padding: 10px 15px;
+    }
+    .innerimg img {
+        height: 200px;
+    }
+    .roomimages h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Medium Devices (Tablets: 576px to 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .header img {
+        width: 150px;
+    }
+    .slider {
+        height: 400px;
+    }
+    .slider-text h1 {
+        font-size: 1.8rem;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .innerimg img {
+        height: 220px;
+    }
+}
+
+/* Large Devices (Small Laptops: 768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .slider {
+        height: 500px;
+    }
+    .slider-text h1 {
+        font-size: 2rem;
+    }
+    .innerimg img {
+        height: 250px;
+    }
+    .about img {
+        width: 45%;
+    }
+    .about .about-p {
+        width: 55%;
+    }
+}
+
+/* Extra Large Devices (Desktops and Beyond) */
+@media (min-width: 1024px) {
+    .slider {
+        height: 600px;
+    }
+    .slider-text {
+        font-size: 1.6rem;
+    }
+    .slider-text h1 {
+        font-size: 2.8rem;
+    }
+    .innerimg img {
+        height: 300px;
+    }
+    .about {
+        padding: 60px 10%;
+    }
+}
