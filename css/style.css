@@ -10,7 +10,7 @@
 body {
     background-color: #1e272e; /* Dark Charcoal */
     color: #dcdde1; /* Light Gray */
-    font-size: 16px;
+    font-size: 1rem; /* Use rem units for better scalability */
     font-weight: 400;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
@@ -32,20 +32,20 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 10px 5%;
     background: linear-gradient(90deg, #f0932b, #e58e26);
-    color: rgb(7, 0, 0);
-    font-size: x-large;
+    color: #070000;
+    font-size: 1rem; /* Use rem units */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header img {
-    width: 150px;
+    width: 3.75rem; /* Use rem units */
     height: auto;
 }
 
 .header .logo span {
-    font-size: 2rem;
+    font-size: 1.2rem; /* Use rem units */
     font-weight: 600;
     color: white;
     text-transform: uppercase;
@@ -55,7 +55,7 @@ ul {
 /* Navigation Bar */
 .nav {
     background-color: #303952; /* Dark Navy */
-    padding: 15px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -63,17 +63,18 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Ensure items wrap on small screens */
 }
 
 .nav li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 .nav a {
     text-decoration: none;
     color: #dcdde1;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem; /* Use rem units */
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -86,7 +87,7 @@ ul {
 .slider {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 18.75rem; /* Adjusted height for better fit on mobile */
     background-color: #303952;
     overflow: hidden;
 }
@@ -105,21 +106,21 @@ ul {
     background: rgba(0, 0, 0, 0.6);
     color: #f0932b;
     text-align: center;
-    padding: 30px;
+    padding: 15px;
     border-radius: 10px;
-    max-width: 80%;
+    max-width: 90%; /* Increased max-width for better fit */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .slider-text h1 {
-    font-size: 2.8rem;
-    margin-bottom: 15px;
+    font-size: 1.6rem; /* Use rem units */
+    margin-bottom: 10px;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
+    margin-top: 10px;
+    padding: 0.5rem 1rem; /* Use rem units */
     background: linear-gradient(135deg, #f0932b, #e58e26);
     color: white;
     text-decoration: none;
@@ -135,21 +136,22 @@ ul {
 
 /* Room Images Section */
 .roomimages {
-    padding: 50px 8%;
+    padding: 30px 5%; /* Reduced padding */
     background-color: #2c3a47;
     text-align: center;
 }
 
 .roomimages h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem; /* Use rem units */
     color: #f0932b;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .innerimg {
     display: inline-block;
-    width: 30%;
-    margin: 10px 1.5%;
+    width: 100%; /* Changed to 100% to make responsive */
+    max-width: 48%; /* Ensures it doesn't exceed 48% of the container */
+    margin: 10px 1%; /* Adjusted margin for better fit */
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -158,7 +160,7 @@ ul {
 
 .innerimg img {
     width: 100%;
-    height: 250px;
+    height: 11.25rem; /* Use rem units */
     object-fit: cover;
 }
 
@@ -178,37 +180,39 @@ ul {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 8%;
+    padding: 30px 5%; /* Reduced padding */
     background-color: #34495e;
     color: #dcdde1;
 }
 
 .about img {
-    width: 45%;
+    width: 100%; /* Changed to 100% to make responsive */
+    max-width: 48%; /* Ensures it doesn't exceed 48% of the container */
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 .about .about-p {
-    width: 50%;
+    width: 100%; /* Changed to 100% to make responsive */
+    max-width: 48%; /* Ensures it doesn't exceed 48% of the container */
     text-align: justify;
 }
 
 .about .about-p h1 {
-    font-size: 2.2rem;
+    font-size: 1.8rem; /* Use rem units */
     color: #f0932b;
     margin-bottom: 15px;
 }
 
 .about .about-p p {
-    font-size: 1.1rem;
+    font-size: 1rem; /* Use rem units */
 }
 
 /* Footer Section */
 #footer {
     background: #303952;
     color: #dcdde1;
-    padding: 25px 8%;
+    padding: 20px 5%; /* Reduced padding */
     text-align: center;
 }
 
@@ -218,7 +222,7 @@ ul {
 
 .social-links a {
     color: #f0932b;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Use rem units */
     margin: 0 10px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -231,7 +235,7 @@ ul {
 .copyright,
 .credits {
     margin-top: 15px;
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Use rem units */
 }
 
 .credits a {
@@ -247,111 +251,177 @@ ul {
 
 /* Extra Small Devices (Portrait Phones) */
 @media (max-width: 400px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
     .header img {
-        width: 100px;
+        width: 3.125rem; /* Use rem units */
+    }
+    .header .logo span {
+        font-size: 1rem; /* Use rem units */
     }
     .slider {
-        height: 300px;
+        height: 12.5rem; /* Use rem units */
     }
     .slider-text {
-        font-size: 1rem;
-        padding: 15px;
+        font-size: 0.9rem; /* Use rem units */
+        padding: 10px;
     }
     .slider-text h1 {
-        font-size: 1.4rem;
+        font-size: 1.2rem; /* Use rem units */
     }
     .btn {
-        padding: 8px 12px;
-        font-size: 0.9rem;
+        padding: 0.375rem 0.625rem; /* Use rem units */
+        font-size: 0.8rem; /* Use rem units */
     }
     .roomimages h1,
     .about .about-p h1 {
-        font-size: 1.6rem;
+        font-size: 1.4rem; /* Use rem units */
+    }
+    .innerimg {
+        max-width: 100%; /* Ensure inner images take full width */
+        margin: 10px 0;
     }
     .innerimg img {
-        height: 180px;
+        height: 8.75rem; /* Use rem units */
+    }
+    .about img {
+        max-width: 100%; /* Ensure full width for images */
+        margin-bottom: 20px;
+    }
+    .about .about-p {
+        max-width: 100%; /* Ensure full width for text */
     }
 }
 
 /* Small Devices (Larger Phones: 400px to 576px) */
 @media (min-width: 400px) and (max-width: 576px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
     .header img {
-        width: 120px;
+        width: 3.75rem; /* Use rem units */
+    }
+    .header .logo span {
+        font-size: 1.2rem; /* Use rem units */
     }
     .slider {
-        height: 350px;
+        height: 15.625rem; /* Use rem units */
     }
     .slider-text h1 {
-        font-size: 1.6rem;
+        font-size: 1.4rem; /* Use rem units */
     }
     .btn {
-        padding: 10px 15px;
+        padding: 0.5rem 0.75rem; /* Use rem units */
+    }
+    .innerimg {
+        max-width: 100%; /* Ensure inner images take full width */
+        margin: 10px 0;
     }
     .innerimg img {
-        height: 200px;
+        height: 10rem; /* Use rem units */
     }
     .roomimages h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem; /* Use rem units */
+    }
+    .about img {
+        max-width: 100%; /* Ensure full width for images */
+        margin-bottom: 20px;
+    }
+    .about .about-p {
+        max-width: 100%; /* Ensure full width for text */
     }
 }
 
 /* Medium Devices (Tablets: 576px to 768px) */
 @media (min-width: 576px) and (max-width: 768px) {
     .header img {
-        width: 150px;
+        width: 4.375rem; /* Use rem units */
+    }
+    .header .logo span {
+        font-size: 1.3rem; /* Use rem units */
     }
     .slider {
-        height: 400px;
+        height: 18.75rem; /* Use rem units */
     }
     .slider-text h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem; /* Use rem units */
     }
     .about {
         flex-direction: column;
     }
     .about img {
-        width: 100%;
+        width: 100%; /* Ensure full width on smaller screens */
         margin-bottom: 20px;
     }
+    .innerimg {
+        max-width: 48%; /* Adjust the width to fit better on tablets */
+    }
     .innerimg img {
-        height: 220px;
+        height: 11.25rem; /* Use rem units */
     }
 }
 
 /* Large Devices (Small Laptops: 768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+    .header img {
+        width: 5rem; /* Use rem units */
+    }
+    .header .logo span {
+        font-size: 1.5rem; /* Use rem units */
+    }
     .slider {
-        height: 500px;
+        height: 21.875rem; /* Use rem units */
     }
     .slider-text h1 {
-        font-size: 2rem;
+        font-size: 1.8rem; /* Use rem units */
+    }
+    .innerimg {
+        max-width: 45%; /* Adjust the width to fit better on small laptops */
     }
     .innerimg img {
-        height: 250px;
+        height: 12.5rem; /* Use rem units */
     }
     .about img {
-        width: 45%;
+        max-width: 45%; /* Adjust the width to fit better on small laptops */
     }
     .about .about-p {
-        width: 55%;
+        max-width: 55%; /* Adjust the width to fit better on small laptops */
     }
 }
 
 /* Extra Large Devices (Desktops and Beyond) */
 @media (min-width: 1024px) {
+    .header img {
+        width: 6.25rem; /* Use rem units */
+    }
+    .header .logo span {
+        font-size: 1.5rem; /* Use rem units */
+    }
     .slider {
-        height: 600px;
+        height: 25rem; /* Use rem units */
     }
     .slider-text {
-        font-size: 1.6rem;
+        font-size: 1.6rem; /* Use rem units */
     }
     .slider-text h1 {
-        font-size: 2.8rem;
+        font-size: 2.4rem; /* Use rem units */
+    }
+    .innerimg {
+        max-width: 30%; /* Adjust the width to fit better on large screens */
     }
     .innerimg img {
-        height: 300px;
+        height: 13.75rem; /* Use rem units */
     }
     .about {
         padding: 60px 10%;
+    }
+    .about img {
+        max-width: 45%; /* Adjust the width to fit better on large screens */
+    }
+    .about .about-p {
+        max-width: 50%; /* Adjust the width to fit better on large screens */
     }
 }
